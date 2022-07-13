@@ -1,0 +1,14 @@
+.selected:nth-child(odd) {
+    color: #ffffff;
+    background: #324960;
+}
+
+.selected:nth-child(even) {
+    background: #F8F8F8;
+}
+
+td,
+th {
+    width: 22vw;
+    text-align: start;
+}

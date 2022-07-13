@@ -1,0 +1,15 @@
+section {
+    border: 1px solid black;
+    background-color: bisque;
+    width: 48%;
+
+}
+
+.wishlist {
+    background-color: red;
+}
+
+article {
+    width: 220px;
+}
+

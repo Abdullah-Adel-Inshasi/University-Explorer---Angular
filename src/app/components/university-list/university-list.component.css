@@ -1,0 +1,50 @@
+body {
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    align-items: center;
+    height: 660px;
+}
+
+aside button {
+    cursor: pointer;
+    background: #3f51b5;
+    border: none;
+    color: white;
+    padding: 1.5rem 3rem;
+    width: 80%;
+    height: 80px;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    margin: 10px;
+    width: 200px;
+}
+
+.uni-card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+app-university-card {
+    height: 100px;
+    width: 220px;
+    margin: 8px;
+}

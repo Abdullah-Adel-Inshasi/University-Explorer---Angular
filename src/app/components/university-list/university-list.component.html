@@ -1,0 +1,23 @@
+<body>
+  <aside>
+    <h2>Country list</h2>
+    <button
+      *ngFor="let country of countries"
+      (click)="showCountryUniversities(country)"
+    >
+      {{ country }}
+    </button>
+  </aside>
+  <main>
+    <div style="display: block">
+      <label for="term">Search university</label>
+      <input #name (input)="searchByName(name.value)" id="term" class="input" />
+    </div>
+    <div class="uni-card-wrapper">
+      <app-university-card
+        *ngFor="let uni of universities$ | async"
+        [uni]="uni"
+      ></app-university-card>
+    </div>
+  </main>
+</body>

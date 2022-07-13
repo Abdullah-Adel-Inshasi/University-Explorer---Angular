@@ -1,0 +1,8 @@
+<article *ngIf="uni" (click)="addToWishlist()">
+  <h4>{{ uni.name }}</h4>
+  <p>{{ uni.country }} || {{ uni["alpha_two_code"] }}</p>
+  <button (click)="goToPage()">
+    <a>{{ uni.web_pages[0] }}</a>
+  </button>
+  <div class="wishlist" *ngIf="inWishlist()">in wish list</div>
+</article>

@@ -1,0 +1,24 @@
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Country</th>
+      <th>Checked</th>
+      <th>Remove</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of wishlist">
+      <td>{{ item.university.name }}</td>
+      <td>{{ item.university.country }}</td>
+      <td>
+        <button (click)="toggleCheck(item)">
+          {{ item.checked }}
+        </button>
+      </td>
+      <td>
+        <button (click)="removeFromWishlist(item)">remove</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
